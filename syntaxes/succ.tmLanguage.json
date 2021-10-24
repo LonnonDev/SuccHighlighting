@@ -1,0 +1,27 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Succ",
+	"patterns": [
+		{
+			"match": "((?<![\\\\])['\"])((?:.(?!(?<![\\\\])\\1))*.?)\\1",
+			"name": "string.quoted"
+		},
+		{
+			"match": "[a-z, A-Z]*:",
+			"name": "variable.parameter"
+		},
+		{
+			"match": "[a-z, A-Z]*$",
+			"name": "string"
+		},
+		{
+			"match": "-\\d+.*\\d|\\d+.*\\d",
+			"name": "constant.numeric"
+		},
+		{
+			"match": "[A-F, a-f, 0-9]{6}$",
+			"name": "constant.numeric"
+		}
+	],
+	"scopeName": "source.succ"
+}

@@ -1,0 +1,26 @@
+{
+    "name": "succ-highlighter",
+    "publisher": "lonnonjamesd",
+    "displayName": "Succ Highlighter",
+    "description": "Highlights .succ files",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.61.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "succ",
+            "aliases": ["Succ", "succ"],
+            "extensions": [".succ"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "succ",
+            "scopeName": "source.succ",
+            "path": "./syntaxes/succ.tmLanguage.json"
+        }]
+    }
+}
