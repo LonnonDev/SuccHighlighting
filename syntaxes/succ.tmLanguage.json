@@ -21,6 +21,10 @@
 		{
 			"match": "[A-F, a-f, 0-9]{6}$",
 			"name": "constant.numeric"
+		},
+		{
+			"match": "(#.*)",
+			"name": "comment.line"
 		}
 	],
 	"scopeName": "source.succ"
