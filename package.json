@@ -22,5 +22,6 @@
             "scopeName": "source.succ",
             "path": "./syntaxes/succ.tmLanguage.json"
         }]
-    }
+    },
+    "repository": "https://github.com/LonnonDev/SuccHighlighting"
 }
